@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "files": ["dist"],
+  "module": "./dist/liuyc-vue-split-pane.js",
+  "exports": {
+    ".": {
+      "import": "./dist/liuyc-vue-split-pane.js",
+      "require": "./dist/liuyc-vue-split-pane.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
