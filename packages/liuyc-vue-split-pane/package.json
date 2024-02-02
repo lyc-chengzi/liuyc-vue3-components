@@ -1,5 +1,9 @@
 {
   "name": "@liuyc/vue-split-pane",
+  "author": {
+    "name": "liuyc",
+    "url": "https://github.com/lyc-chengzi"
+  },
   "version": "1.0.0",
   "private": true,
   "type": "module",
