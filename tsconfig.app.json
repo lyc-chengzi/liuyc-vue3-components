@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "packages/*/src/**/*",
+    "packages/*/src/**/*.vue",
+    "packages/*/@types/*.ts"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./packages/*"],
+      "liuyc-vue-split-pane/*": ["packages/liuyc-vue-split-pane/*"],
+    }
+  }
+}
